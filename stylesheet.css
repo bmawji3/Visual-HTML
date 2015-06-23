@@ -1,0 +1,37 @@
+p {
+    color: blue;
+}
+
+span {
+    color: red;
+    background-color: black;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 50px;
+    color: green;
+}
+
+td {
+    border: 2px dotted green;
+    text-align: center;
+}
+
+table {
+    border: 10px dotted;
+}
+
+th {
+    border: dashed blue;
+}
+
+a {
+    color: black;
+    text-decoration: line-through;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
