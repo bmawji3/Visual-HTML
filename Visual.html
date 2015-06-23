@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- This site is authored by Bilal Mawji -->
+<!-- I learned HTML from Codecademy and applied it to make this website -->
 <html>
     <head>
         <title>Visual HTML</title>
@@ -73,6 +75,40 @@
         <table border="1px">
             <thead>
                 <tr>
+                    <th colspan="3">Items Link can use and where to find them</th>
+                </tr>
+                <tr>
+                    <th>Item</th>
+                    <th>Person Giving</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Telescope</td>
+                    <td>Aryll</td>
+                    <td>Outset Island</td>
+                </tr>
+                <tr>
+                    <td>Hero's Sword</td>
+                    <td>Orca</td>
+                    <td>Outset Island</td>
+                </tr>
+                <tr>
+                    <td>Hero's Shield</td>
+                    <td>Grandma</td>
+                    <td>Outset Island</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Here's the same table with border collapsed</p>
+        <!-- You can also include differnt things in here such as padding and border: top, bottom, left, and right -->
+        <table border="1px" style="border-collapse:collapse">
+            <thead>
+                <tr>
+                    <th colspan="3">Items Link can use and where to find them</th>
+                </tr>
+                <tr>
                     <th>Item</th>
                     <th>Person Giving</th>
                     <th>Location</th>
@@ -97,6 +133,33 @@
             </tbody>
         </table>
         <p></p>
-        <a href="http://www.ign.com/wikis/the-legend-of-zelda-wind-waker/Items/Weapons">Information about Legend of Zelda Wind Waker Items was received from this website</a>
+        <a href="http://www.ign.com/wikis/the-legend-of-zelda-wind-waker/Items/Weapons">Information about Legend of Zelda: Wind Waker Items was received from IGN</a>
+        <!-- Here is an example of div/span -->
+        <div style="background-color:black; width:250px; height:20px">
+            <p>
+                <span style="color:red">Richard</span>
+                <span style="color:orange">Of</span>
+                <span style="color:yellow">York</span>
+                <span style="color:green">Gave</span>
+                <span style="color:blue">Battle</span>
+                <span style="color:indigo">In</span>
+                <span style="color:violet">Vain</span>
+            </p>
+        </div>
+        <p></p>
+        <p>Does this text <span style="font-family:cursive">remind you of anything?</span></p>
+        <p style="font-family:cursive">Take a guess: <input type="text" id="guess">
+        <button onclick="takingGuess()" style="font-family:cursive">Let's see if you guessed right</button>
+        <p id="answer"></p>
+        <script type="text/javascript">
+            function takingGuess() {
+                var x = document.getElementById("guess").value;
+                if (x == "LOTR") {
+                    document.getElementById("answer").innerHTML= "You guessed correctly!";
+                } else {
+                    document.getElementById("answer").innerHTML= "Sorry, guess again";
+                }
+            };
+        </script>
     </body>
 </html>
