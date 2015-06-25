@@ -48,3 +48,24 @@ div {
     color: blue;
     font-family: cursive;
 }
+
+div div {
+    height: 75px;
+    width: 120px;
+    border-color: #000000;
+    background-color: #00e5ee;
+    border-style: 2px solid;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    color: blue;
+    font-family: cursive;
+}
+
+div div a {
+    text-decoration: none;
+    color: green;
+}
+
+/*Also note, you can make a selector with the '*' symbol to change */
+/*everything in the document?*/
