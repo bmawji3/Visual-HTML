@@ -69,3 +69,15 @@ div div a {
 
 /*Also note, you can make a selector with the '*' symbol to change */
 /*everything in the document?*/
+
+.heading1 {
+    color: blue;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+#id1 {
+    color: green;
+    text-align: center;
+    font-family: Courier;
+}
